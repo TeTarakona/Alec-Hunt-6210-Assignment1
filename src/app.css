@@ -1,0 +1,58 @@
+/* I am (clearly) not a designer, but it's responsive c: */
+
+.main {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 1.2rem;
+    width: 95%;
+    margin: auto;
+    background-color: beige;
+    box-sizing: border-box;
+  }
+  
+  .img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .entities {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .entity {
+    border: 0.2rem solid black;
+    background-color: #eaeab4;
+  }
+  
+  .description {
+    align-self: center;
+    padding: 10rem;
+  }
+  
+  .image-container {
+    align-self: center;
+    padding: 0;
+  }
+  
+  @media only screen and (max-width: 30rem) {
+    .entity {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media only screen and (max-width: 64rem) {
+    .entities {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .description {
+      padding: 1rem;
+    }
+  
+  }
+  
